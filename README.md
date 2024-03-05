@@ -1,5 +1,5 @@
 # PINN4NST - practice
-Physics-informed neural network parts for NST. Codes are based on https://github.com/neuraloperator/physics_informed with small modifications for further research.
+Physics-informed neural network parts for NST. Codes are based on https://github.com/neuraloperator/physics_informed (Z. Li, et. al. 2022.) with small modifications for further research.
 
 ## Conda Environment
 ```
@@ -37,7 +37,7 @@ Configuration file format: see `.yaml` files under folder `configs` for detail.
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
 ```
 
-## Neural operator for Navier Stokes (Z. Li, et. al. 2022.)
+## Neural operator for Navier Stokes
 - Fourier neural operator with pinn loss in spectral space.
 ```
 python instance_opt.py --config configs/Re500-05s-test.yaml
