@@ -40,7 +40,7 @@ DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.ya
 **- Neural operator for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
-python instance_opt.py --config configs/Re500-05s-test.yaml
+python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
 ```
 
 ## Navier Stokes with Reynolds number 1000 (D. Shu, et. al., 2023)
@@ -61,5 +61,5 @@ DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.ya
 **- Neural operator for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
-python instance_opt.py --config configs/Re500-05s-test.yaml
+python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
 ```
