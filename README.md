@@ -14,7 +14,7 @@ pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
 conda install -c conda-forge deepxde
 ```
 
-## Navier Stokes with Reynolds number 500
+## Navier Stokes with Reynolds number 500 (Z. Li, et. al. 2022.)
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 0.5\]$
 - forcing: $-4\cos(4x_2)$
@@ -31,13 +31,13 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 
 Configuration file format: see `.yaml` files under folder `configs` for detail. 
 
-## Naive PINN for Navier Stokes
+**- Naive PINN for Navier Stokes**
 - FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
 ```
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
 ```
 
-## Neural operator for Navier Stokes
+**- Neural operator for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
 python instance_opt.py --config configs/Re500-05s-test.yaml
