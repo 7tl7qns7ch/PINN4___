@@ -32,7 +32,7 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 Configuration file format: see `.yaml` files under folder `configs` for detail. 
 
 ## Naive PINN for Navier Stokes
-- FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3])with pinn loss on pointwise collocations.
+- FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
 ```
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
 ```
