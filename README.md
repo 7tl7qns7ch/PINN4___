@@ -17,7 +17,10 @@ pip install pyDOE
 ```
 
 ## Navier Stokes with Reynolds number 500 (Z. Li, et. al. 2022)
-![NS_500_0](https://github.com/7tl7qns7ch/PINN4___/assets/39257402/b4dea56d-055d-4a2e-bec3-688a456a308a)
+<p align="center">
+<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/b4dea56d-055d-4a2e-bec3-688a456a308a">
+</p>
+  
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 0.5\]$
 - forcing: $-4\cos(4x_2)$
