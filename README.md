@@ -1,5 +1,5 @@
-# PINN4NST - practice
-Physics-informed neural network parts for NST. Codes are based on https://github.com/neuraloperator/physics_informed (Z. Li, et. al. 2022.) and https://github.com/BaratiLab/Diffusion-based-Fluid-Super-resolution (D. Shu, et. al. 2023) with small modifications for further research.
+# PINN4___ - practice
+Physics-informed neural network parts for ___. Codes are based on https://github.com/neuraloperator/physics_informed (Z. Li, et. al. 2022.) and https://github.com/BaratiLab/Diffusion-based-Fluid-Super-resolution (D. Shu, et. al. 2023) with small modifications for further research.
 
 ## Conda Environment
 ```
