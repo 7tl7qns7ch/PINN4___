@@ -15,7 +15,13 @@ conda install -c conda-forge deepxde
 ```
 
 ### Naive PINN for Navier Stokes
-- FeedForward Neural Networks with point-collocations
+- FeedForward Neural Networks with pinn loss on pointwise collocations.
 ```
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
+```
+
+### Neural operator for Navier Stokes (Z. Li, et. al. 2022.)
+- Fourier neural operator with pinn loss in spectral space.
+```
+python instance_opt.py --config configs/Re500-05s-test.yaml
 ```
