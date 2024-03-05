@@ -1,0 +1,69 @@
+data:
+  datapath: 'data/NS_Re500_s256_T100_test.npy'
+  paths: ['data/NS_Re500_s256_T100_test.npy']
+  # paths: ['pino/data/NS_Re500_s256_T100_test.npy']
+  Re: 500
+  total_num: 100
+
+  raw_res: [256, 256, 129]
+  data_res: [128, 128, 129]  # resolution in 1 second
+  pde_res: [128, 128, 129]   # resolution in 1 second
+  n_sample: 100
+  n_test_samples: 100
+  testoffset: 0
+  t_duration: 0.5
+
+  offset: 0
+  time_interval: 0.5
+  nx: 256
+  nt: 128
+  sub: 4
+  sub_t: 1
+  shuffle: False
+
+model:
+  # layers: [64, 64, 64, 64, 64]
+  # modes1: [8, 8, 8, 8]
+  # modes2: [8, 8, 8, 8]
+  # modes3: [8, 8, 8, 8]
+  # fc_dim: 128
+  # act: gelu
+  # pad_ratio: 0.125
+
+  layers: [64, 64, 64, 64, 64]
+  modes1: [12, 12, 12, 12]
+  modes2: [12, 12, 12, 12]
+  modes3: [12, 12, 12, 12]
+  fc_dim: 128
+  act: gelu
+  pad_ratio: [0.0, 0.125]
+
+train:
+  batchsize: 1
+  base_lr: 0.001
+  log_step: 100
+
+  num_iter: 10001
+  milestones: [2000, 4000, 6000, 8000]
+
+  scheduler_gamma: 0.5
+  save_step: 5000
+  eval_step: 5000
+  
+  # ic_loss: 10.0
+  # f_loss: 1.0
+  ic_loss: 0
+  f_loss: 0
+
+  xy_loss: 10.0
+  # xy_loss: 0
+
+test:
+  batchsize: 1
+  ckpt: 'checkpoints/Re500-FDM/PINO-pretrain-Re500-05s-4k1k.pt'
+
+log:
+  logdir: Re500-1s-test.yaml
+
+  project: 'PINO-None'
+  group: 'eval'
