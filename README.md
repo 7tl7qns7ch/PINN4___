@@ -50,7 +50,7 @@ python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
 - Reynolds number: 1000
 
 Test set: data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
-1. [NS_Re500_s256_T100_test.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_Re500_s256_T100_test.npy): 40x320x256x256    (**Download this 40 examples of NS**)
+1. [NS.npy](): 40x320x256x256    (**Download this 40 examples of NS**)
 
 **- Naive PINN for Navier Stokes**
 - FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
