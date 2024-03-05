@@ -32,7 +32,7 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 2. [NS_fine_Re500_T128_part2.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fine_Re500_T128_part2.npy): 100x129x128x128
 
 **- Naive PINN for Navier Stokes**
-- FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
+- FeedForward Neural Networks (layers with [3, 50, 50, 50, 50, 50, 50, 3]) with pinn loss on pointwise collocations.
 ```
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
 ```
