@@ -3,9 +3,9 @@ Physics-informed neural network parts for ___. Codes are based on https://github
 
 ## Conda Environment
 ```
-conda create -n nst python=3.9
+conda create -n pinn4 python=3.9
 
-conda activate nst
+conda activate pinn4
 
 pip install --upgrade pip
 
