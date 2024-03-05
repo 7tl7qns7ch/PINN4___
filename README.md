@@ -1,5 +1,5 @@
 # PINN4NST - practice
-Physics-informed neural networks parts for NST
+Physics-informed neural network parts for NST. Codes are based on https://github.com/neuraloperator/physics_informed with small modifications for further research.
 
 ### Conda Environment
 ```
