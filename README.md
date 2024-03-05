@@ -1,2 +1,2 @@
 # PINN4NST - practice
-physics-informed neural networks parts for NST
+Physics-informed neural networks parts for NST
