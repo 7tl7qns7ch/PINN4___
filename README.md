@@ -63,11 +63,9 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 **- Naive PINN for Navier Stokes**
 - FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
 ```
-DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re1000-pinns-05s.yaml
 ```
 
 **- Neural operator for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
-python instance_opt.py --config configs/Re1000-05s-test.yaml --tqdm
 ```
