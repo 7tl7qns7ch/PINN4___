@@ -41,7 +41,7 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
 ```
 
-**- Neural operator for Navier Stokes**
+**- PINN + NO for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
 python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
@@ -65,7 +65,7 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 ```
 ```
 
-**- Neural operator for Navier Stokes**
+**- PINN + NO for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
 ```
