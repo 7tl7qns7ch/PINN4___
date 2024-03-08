@@ -60,12 +60,8 @@ python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
 Test set: data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
 1. (<a href="https://figshare.com/ndownloader/files/39181919">kf_2d_re1000_256_40seed</a>): 40x320x256x256    (**Download this 40 examples of NS**)
 
-**- Naive PINN for Navier Stokes**
-- FeedForward Neural Networks (layers with [3, 100, 100, 100, 100, 3]) with pinn loss on pointwise collocations.
-```
-```
-
 **- PINN + NO for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
+python train_pdeloss.py --tqdm
 ```
