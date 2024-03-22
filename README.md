@@ -20,6 +20,10 @@ pip install pyDOE
 <img src="https://github.com/7tl7qns7ch/PINN4___/">
 </p>
 
+```
+Just run NS_generator.ipynb
+```
+
 ## Navier Stokes with Reynolds number 500
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 0.5\]$
