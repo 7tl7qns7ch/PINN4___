@@ -26,31 +26,24 @@ pip install pyDOE
 NS_generator.ipynb (above figure can be obtained with changing args.Re=100, 1000, 10000 in the second code block)
 ```
 
-## Navier Stokes with Reynolds number 500
+## Previous Dataset: Navier Stokes with Reynolds number 500
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 0.5\]$
 - forcing: $-4\cos(4x_2)$
 - Reynolds number: 500
 
-Train set: data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
-1. [NS_fft_Re500_T4000.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fft_Re500_T4000.npy) : 4000x64x64x65
-2. [NS_fine_Re500_T128_part0.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fine_Re500_T128_part0.npy): 100x129x128x128
-3. [NS_fine_Re500_T128_part1.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fine_Re500_T128_part1.npy): 100x129x128x128
+Data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
+1. [NS_Re500_s256_T100_test.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_Re500_s256_T100_test.npy): 100x129x256x256
 
-Test set: data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
-1. [NS_Re500_s256_T100_test.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_Re500_s256_T100_test.npy): 100x129x256x256    (**Download this 100 examples of NS**)
-2. [NS_fine_Re500_T128_part2.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fine_Re500_T128_part2.npy): 100x129x128x128
-
-## Navier Stokes with Reynolds number 1000
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 10\]$
 - forcing: $-4\cos(4x_2) -0.1\omega(x, t)$
 - Reynolds number: 1000
 
-Test set: data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
-1. (<a href="https://figshare.com/ndownloader/files/39181919">kf_2d_re1000_256_40seed</a>): 40x320x256x256    (**Download this 40 examples of NS**)
+Data of shape (N, T, X, Y) where N is the number of instances, T is temporal resolution, X, Y are spatial resolutions. 
+1. (<a href="https://figshare.com/ndownloader/files/39181919">kf_2d_re1000_256_40seed</a>): 40x320x256x256
 
-**- PINN + NO for Navier Stokes**
+**- PINN loss for Navier Stokes**
 - Fourier neural operator with pinn loss in spectral space.
 ```
 python train_pdeloss.py --tqdm
