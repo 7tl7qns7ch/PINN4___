@@ -41,18 +41,6 @@ Test set: data of shape (N, T, X, Y) where N is the number of instances, T is te
 1. [NS_Re500_s256_T100_test.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_Re500_s256_T100_test.npy): 100x129x256x256    (**Download this 100 examples of NS**)
 2. [NS_fine_Re500_T128_part2.npy](https://hkzdata.s3.us-west-2.amazonaws.com/PINO/data/NS_fine_Re500_T128_part2.npy): 100x129x128x128
 
-**- Naive PINN for Navier Stokes**
-- FeedForward Neural Networks (layers with [3, 50, 50, 50, 50, 50, 50, 3]) with pinn loss on pointwise collocations.
-```
-DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.yaml
-```
-
-**- PINN + NO for Navier Stokes**
-- Fourier neural operator with pinn loss in spectral space.
-```
-python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
-```
-
 ## Navier Stokes with Reynolds number 1000
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 10\]$
