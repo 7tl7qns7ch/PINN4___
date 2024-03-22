@@ -16,10 +16,10 @@ conda install -c conda-forge deepxde
 pip install pyDOE
 ```
 ## Navier Stokes Data Generator
-<p align="left">
-<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/9aab4dcd-d051-49ba-ba6b-7c6e5489cfe9" width="300"> 
-<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/8867da36-648d-4c95-a642-de7f156a066d" width="300"> 
-<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/cd43b3d2-eb06-461b-a72d-229bbf86d67a" width="300">
+<p align="center">
+<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/9aab4dcd-d051-49ba-ba6b-7c6e5489cfe9" width="250"> 
+<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/8867da36-648d-4c95-a642-de7f156a066d" width="250"> 
+<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/cd43b3d2-eb06-461b-a72d-229bbf86d67a" width="250">
 </p>
 
 
