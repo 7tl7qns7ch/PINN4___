@@ -21,7 +21,7 @@ pip install pyDOE
 </p>
 
 ```
-NS_generator.ipynb changing (with changing args.Re in second code block)
+NS_generator.ipynb (with changing args.Re in second code block)
 ```
 
 ## Navier Stokes with Reynolds number 500
