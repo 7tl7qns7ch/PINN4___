@@ -21,12 +21,8 @@ pip install pyDOE
 <img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/8867da36-648d-4c95-a642-de7f156a066d" width="250"> 
 <img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/cd43b3d2-eb06-461b-a72d-229bbf86d67a" width="250">
 </p>
-
-
-
-
 ```
-NS_generator.ipynb (with changing args.Re in second code block)
+NS_generator.ipynb (above figure can be obtained with changing args.Re=100, 1000, 10000 in the second code block)
 ```
 
 ## Navier Stokes with Reynolds number 500
