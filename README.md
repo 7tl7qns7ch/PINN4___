@@ -15,6 +15,10 @@ conda install -c conda-forge deepxde
 
 pip install pyDOE
 ```
+## Navier Stokes Data Generator
+<p align="center">
+<img src="https://github.com/7tl7qns7ch/PINN4___/">
+</p>
 
 ## Navier Stokes with Reynolds number 500
 - spatial domain: $x\in (0, 2\pi)^2$
@@ -43,11 +47,7 @@ DDE_BACKEND=pytorch python pinns.py --config configs/baseline/Re500-pinns-05s.ya
 python instance_opt.py --config configs/Re500-05s-test.yaml --tqdm
 ```
 
-## Navier Stokes with Reynolds number 1000 (D. Shu, et. al., 2023)
-<p align="center">
-<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/32ff60dd-aa14-4db8-80cd-2f5f17758335">
-</p>
-
+## Navier Stokes with Reynolds number 1000
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 10\]$
 - forcing: $-4\cos(4x_2) -0.1\omega(x, t)$
