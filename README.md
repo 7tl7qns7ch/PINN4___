@@ -20,6 +20,12 @@ pip install pyDOE
 <img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/8867da36-648d-4c95-a642-de7f156a066d">
 </p>
 
+<p align="center">
+<img src="https://github.com/7tl7qns7ch/PINN4___/assets/39257402/cd43b3d2-eb06-461b-a72d-229bbf86d67a">
+</p>
+
+
+
 ```
 NS_generator.ipynb (with changing args.Re in second code block)
 ```
