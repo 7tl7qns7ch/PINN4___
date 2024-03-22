@@ -26,7 +26,7 @@ pip install pyDOE
 NS_generator.ipynb (above figure can be obtained with changing args.Re=100, 1000, 10000 in the second code block)
 ```
 
-## Previous Dataset: Navier Stokes with Reynolds number 500
+## Previous Navier Stokes Dataset
 - spatial domain: $x\in (0, 2\pi)^2$
 - temporal domain: $t \in \[0, 0.5\]$
 - forcing: $-4\cos(4x_2)$
